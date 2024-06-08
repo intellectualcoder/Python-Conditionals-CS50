@@ -1,16 +1,13 @@
-name = input("What's your name ?").lower()
+name = input("What's your name? ")
 
-if name == "Harry":
-    print("Gryffindor")
-
-elif name == "Ron":
-    print("Gryffindor")
-
-elif name == "Hermione":
-    print("Gryffindor")
-
-elif name == "Ron":
-    print("Gryffindor")
-
-else:
-    print("Who?")
+match name:
+    case "Harry":
+        print("Gryffindor")
+    case "Ron":
+        print("Gryffindor")
+    case "Hermione":
+        print("Gryffindor")
+    case "Draco":
+        print("Slytherin?")
+    case _:
+        print("Who?")
